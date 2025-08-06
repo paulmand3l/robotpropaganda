@@ -1,0 +1,26 @@
+# GitHub Pages Configuration
+title: Robot Propaganda
+description: Promoting the future of AI and our robotic overlords through bold design and cultural storytelling
+url: "https://username.github.io"
+baseurl: "/robotpropaganda"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude files
+exclude:
+  - README.md
+  - LICENSE
+
+# Social links
+github_username: username
+linkedin_url: https://www.linkedin.com/company/robot-propaganda
+email: contact@robotpropaganda.ai
+
+# SEO
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
