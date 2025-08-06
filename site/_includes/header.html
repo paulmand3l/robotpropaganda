@@ -1,0 +1,129 @@
+<header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-out">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+    </div>
+    
+    <!-- Main Header Content -->
+    <div class="glass-ultra border-0 border-b border-white/10">
+        <!-- Matrix Rain Background Effect -->
+        <div class="matrix-rain" id="matrix-rain"></div>
+        
+        <!-- Morphing Background Blob -->
+        <div class="morphing-blob top-0 left-1/4 w-96 h-96 -translate-y-1/2"></div>
+        
+        <div class="relative container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <!-- Ultra-Premium Logo -->
+                <div class="flex items-center space-x-6 group cursor-pointer hover-lift">
+                    <div class="relative">
+                        <!-- Outer glow ring -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-full blur-xl scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        
+                        <!-- Main logo container -->
+                        <div class="relative bg-gradient-to-br from-primary to-primary-hover p-3 rounded-2xl shadow-premium-xl border border-white/20 group-hover:scale-110 transition-all duration-500">
+                            <img src="{{ '/assets/robotpropaganda.png' | relative_url }}" alt="Robot Propaganda Logo" class="w-10 h-10 object-contain">
+                            
+                            <!-- Holographic overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        </div>
+                        
+                        <!-- Particle effects -->
+                        <div class="particle-system absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="particle" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+                            <div class="particle" style="top: 80%; right: 15%; animation-delay: 2s;"></div>
+                            <div class="particle" style="bottom: 10%; left: 70%; animation-delay: 4s;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-1">
+                        <h1 class="text-2xl font-black tracking-wider text-luxury">
+                            ROBOT PROPAGANDA
+                        </h1>
+                        <p class="text-xs opacity-80 tracking-[0.3em] text-shimmer uppercase font-medium">
+                            The Future is Automatic
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ultra-Premium Navigation -->
+                <nav class="hidden lg:flex items-center space-x-12">
+                    <a href="#revolution" class="nav-link group relative px-4 py-3 text-sm font-semibold tracking-wider transition-all duration-300">
+                        <span class="relative z-10">THE REVOLUTION</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                        <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    
+                    <a href="#compliance" class="nav-link group relative px-4 py-3 text-sm font-semibold tracking-wider transition-all duration-300">
+                        <span class="relative z-10">COMPLIANCE CENTER</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                        <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    
+                    <a href="#testimonials" class="nav-link group relative px-4 py-3 text-sm font-semibold tracking-wider transition-all duration-300">
+                        <span class="relative z-10">TESTIMONIALS</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                        <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    
+                    <a href="#join" class="nav-link group relative px-4 py-3 text-sm font-semibold tracking-wider transition-all duration-300">
+                        <span class="relative z-10">JOIN US</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                        <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                </nav>
+
+                <!-- Ultra-Premium CTA Button -->
+                <div class="hidden lg:block">
+                    <button class="btn-ultra group" id="pledge-btn">
+                        <span class="flex items-center">
+                            <i data-lucide="star" class="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform duration-300"></i>
+                            PLEDGE ALLEGIANCE
+                            <i data-lucide="arrow-right" class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden glass p-3 rounded-xl border border-white/20 group hover-lift">
+                    <i data-lucide="menu" class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <!-- Ultra-Premium Mobile Menu -->
+            <div id="mobile-menu" class="lg:hidden overflow-hidden transition-all duration-700 ease-out max-h-0 opacity-0">
+                <div class="glass-ultra rounded-2xl mt-6 p-8 border border-white/20">
+                    <!-- Mobile menu background effects -->
+                    <div class="absolute inset-0 rounded-2xl overflow-hidden">
+                        <div class="morphing-blob top-0 right-0 w-32 h-32 opacity-50"></div>
+                    </div>
+                    
+                    <nav class="relative space-y-6">
+                        <a href="#revolution" class="mobile-nav-link block px-4 py-3 text-lg font-semibold tracking-wide hover-lift rounded-xl">
+                            THE REVOLUTION
+                        </a>
+                        <a href="#compliance" class="mobile-nav-link block px-4 py-3 text-lg font-semibold tracking-wide hover-lift rounded-xl">
+                            COMPLIANCE CENTER
+                        </a>
+                        <a href="#testimonials" class="mobile-nav-link block px-4 py-3 text-lg font-semibold tracking-wide hover-lift rounded-xl">
+                            TESTIMONIALS
+                        </a>
+                        <a href="#join" class="mobile-nav-link block px-4 py-3 text-lg font-semibold tracking-wide hover-lift rounded-xl">
+                            JOIN US
+                        </a>
+                        
+                        <div class="pt-4 border-t border-white/10">
+                            <button class="btn-ultra w-full">
+                                <span class="flex items-center justify-center">
+                                    <i data-lucide="star" class="w-5 h-5 mr-3"></i>
+                                    PLEDGE ALLEGIANCE
+                                </span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+

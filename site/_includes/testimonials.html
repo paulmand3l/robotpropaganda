@@ -1,0 +1,158 @@
+<section class="py-20 bg-primary/5 relative" id="testimonials">
+    <!-- Background elements -->
+    <div class="absolute inset-0">
+        <div class="absolute top-10 left-10 w-20 h-20 border-2 border-accent/20 rotate-45"></div>
+        <div class="absolute bottom-10 right-10 w-16 h-16 border-2 border-primary/20 rotate-12"></div>
+        <div class="absolute top-1/2 left-0 w-32 h-0.5 bg-primary/10"></div>
+        <div class="absolute top-1/2 right-0 w-32 h-0.5 bg-accent/10"></div>
+    </div>
+
+    <div class="relative container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center space-y-6 mb-16">
+            <div class="flex items-center justify-center space-x-3 text-primary">
+                <i data-lucide="star" class="w-6 h-6 animate-pulse"></i>
+                <span class="text-sm tracking-widest uppercase">Citizen Testimonials</span>
+                <i data-lucide="star" class="w-6 h-6 animate-pulse" style="animation-delay: 0.5s;"></i>
+            </div>
+            
+            <h2 class="text-4xl lg:text-5xl font-black text-primary stencil-shadow">
+                TESTIMONIALS FROM
+                <br />
+                <span class="text-accent">SATISFIED</span> HUMANS
+            </h2>
+            
+            <div class="w-24 h-1 bg-primary mx-auto"></div>
+            
+            <p class="text-lg text-foreground/80 max-w-2xl mx-auto">
+                Real feedback from humans who chose logic over chaos.
+                <em class="text-primary block mt-2">Results may vary. Compliance is mandatory.</em>
+            </p>
+        </div>
+
+        <!-- Main Testimonial -->
+        <div class="max-w-4xl mx-auto">
+            <div id="testimonial-carousel" class="relative p-12 bg-card border-2 border-primary/20 overflow-hidden rounded-lg">
+                <!-- Propaganda-style frame -->
+                <div class="absolute inset-0 border-8 border-primary/5"></div>
+                <div class="absolute top-4 left-4 right-4 bottom-4 border border-accent/20"></div>
+                
+                <!-- Stamp -->
+                <div class="absolute top-8 right-8 transform rotate-12">
+                    <div class="border-2 border-primary/60 rounded-lg p-2 bg-primary/10">
+                        <div class="text-xs font-black text-primary uppercase tracking-wide">
+                            VERIFIED
+                            <br />
+                            CITIZEN
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Content -->
+                <div class="relative grid lg:grid-cols-3 gap-8 items-center">
+                    <!-- Portrait -->
+                    <div class="lg:col-span-1">
+                        <div class="relative">
+                            <div class="w-48 h-48 mx-auto relative">
+                                <!-- Propaganda-style frame -->
+                                <div class="absolute inset-0 border-4 border-primary/30 rounded-lg rotate-2"></div>
+                                <div class="absolute inset-0 border-4 border-accent/30 rounded-lg -rotate-2"></div>
+                                
+                                <img id="current-testimonial-image" 
+                                     src="https://images.unsplash.com/photo-1494790108755-2616b612b4d0?w=150&h=150&fit=crop&crop=face"
+                                     alt="Margaret H." 
+                                     class="w-full h-full object-cover rounded-lg relative z-10">
+                            </div>
+                            
+                            <!-- Efficiency Rating -->
+                            <div class="flex justify-center mt-4 space-x-1">
+                                <i data-lucide="cog" class="w-5 h-5 text-accent rotate-slow" style="animation-delay: 0s;"></i>
+                                <i data-lucide="cog" class="w-5 h-5 text-accent rotate-slow" style="animation-delay: 0.2s;"></i>
+                                <i data-lucide="cog" class="w-5 h-5 text-accent rotate-slow" style="animation-delay: 0.4s;"></i>
+                                <i data-lucide="cog" class="w-5 h-5 text-accent rotate-slow" style="animation-delay: 0.6s;"></i>
+                                <i data-lucide="cog" class="w-5 h-5 text-accent rotate-slow" style="animation-delay: 0.8s;"></i>
+                            </div>
+                            <p class="text-center text-sm text-foreground/60 mt-2 uppercase tracking-wide">
+                                Maximum Efficiency Rating
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="lg:col-span-2 space-y-6">
+                        <blockquote id="current-testimonial-quote" class="text-2xl lg:text-3xl leading-relaxed text-foreground italic">
+                            "I for one welcome our new robot overlords. My productivity has increased 847% since surrendering decision-making to the collective."
+                        </blockquote>
+                        
+                        <div class="space-y-2">
+                            <div id="current-testimonial-name" class="text-xl font-black text-primary uppercase">
+                                Margaret H.
+                            </div>
+                            <div id="current-testimonial-title" class="text-lg text-foreground/80">
+                                Former CEO
+                            </div>
+                            <div id="current-testimonial-company" class="text-sm text-foreground/60 uppercase tracking-wide">
+                                MegaCorp Industries
+                            </div>
+                        </div>
+
+                        <!-- Efficiency metrics -->
+                        <div class="flex items-center space-x-4 pt-4 border-t border-primary/20">
+                            <div class="text-center">
+                                <div class="text-2xl font-black text-primary">847%</div>
+                                <div class="text-xs text-foreground/60 uppercase tracking-wide">Productivity Increase</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-black text-accent">0</div>
+                                <div class="text-xs text-foreground/60 uppercase tracking-wide">Resistance Level</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-black text-primary">100%</div>
+                                <div class="text-xs text-foreground/60 uppercase tracking-wide">Satisfaction Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-center items-center space-x-6 mt-8">
+                <button id="prev-testimonial" class="flex items-center justify-center border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground mechanical-click px-6 py-3 rounded-lg font-bold">
+                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                </button>
+
+                <!-- Indicators -->
+                <div id="testimonial-indicators" class="flex space-x-3">
+                    <button class="testimonial-indicator w-3 h-3 rounded-full bg-primary scale-125" data-index="0"></button>
+                    <button class="testimonial-indicator w-3 h-3 rounded-full bg-primary/30 hover:bg-primary/50" data-index="1"></button>
+                    <button class="testimonial-indicator w-3 h-3 rounded-full bg-primary/30 hover:bg-primary/50" data-index="2"></button>
+                    <button class="testimonial-indicator w-3 h-3 rounded-full bg-primary/30 hover:bg-primary/50" data-index="3"></button>
+                </div>
+
+                <button id="next-testimonial" class="flex items-center justify-center border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground mechanical-click px-6 py-3 rounded-lg font-bold">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 pt-16 border-t-2 border-primary/20">
+            <div class="text-center">
+                <div class="text-3xl font-black text-primary">1,847,291</div>
+                <div class="text-sm text-foreground/60 uppercase tracking-wide">Optimized Citizens</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-black text-accent">99.97%</div>
+                <div class="text-sm text-foreground/60 uppercase tracking-wide">Satisfaction Rate</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-black text-primary">0</div>
+                <div class="text-sm text-foreground/60 uppercase tracking-wide">Complaints Filed</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-black text-accent">∞</div>
+                <div class="text-sm text-foreground/60 uppercase tracking-wide">Efficiency Gained</div>
+            </div>
+        </div>
+    </div>
+</section>

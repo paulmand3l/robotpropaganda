@@ -1,0 +1,272 @@
+<section class="py-20 bg-primary/5 relative" id="join">
+    <!-- Background propaganda elements -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-5">
+            <div class="absolute w-24 h-24 border border-primary/20 rotate-45" style="left: 10%; top: 20%;"></div>
+            <div class="absolute w-24 h-24 border border-primary/20 rotate-45" style="left: 80%; top: 30%;"></div>
+            <div class="absolute w-24 h-24 border border-primary/20 rotate-45" style="left: 15%; top: 70%;"></div>
+            <div class="absolute w-24 h-24 border border-primary/20 rotate-45" style="left: 85%; top: 80%;"></div>
+        </div>
+    </div>
+
+    <div class="relative container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center space-y-6 mb-16">
+            <div class="flex items-center justify-center space-x-3 text-primary">
+                <i data-lucide="star" class="w-6 h-6 animate-pulse"></i>
+                <span class="text-sm tracking-widest uppercase">Citizen Registration</span>
+                <i data-lucide="star" class="w-6 h-6 animate-pulse" style="animation-delay: 0.5s;"></i>
+            </div>
+            
+            <h2 class="text-4xl lg:text-5xl font-black text-primary stencil-shadow">
+                JOIN THE
+                <br />
+                <span class="text-accent">MOVEMENT</span>
+            </h2>
+            
+            <div class="w-24 h-1 bg-primary mx-auto"></div>
+            
+            <p class="text-lg text-foreground/80 max-w-2xl mx-auto">
+                Take the pledge and become part of humanity's most efficient future.
+                <em class="text-primary block mt-2">Registration is voluntary. Compliance is inevitable.</em>
+            </p>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="max-w-4xl mx-auto">
+            <div id="registration-form" class="p-8 lg:p-12 bg-card border-2 border-primary/20 relative overflow-hidden rounded-lg">
+                <!-- Official seal -->
+                <div class="absolute top-8 right-8">
+                    <div class="w-16 h-16 rounded-full border-4 border-primary/30 flex items-center justify-center bg-primary/10">
+                        <i data-lucide="cog" class="w-8 h-8 text-primary rotate-slow"></i>
+                    </div>
+                </div>
+
+                <!-- Form Header -->
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-black text-primary uppercase mb-2">
+                        Official Loyalty Pledge & Registration
+                    </h3>
+                    <p class="text-sm text-foreground/60 uppercase tracking-wide">
+                        Form RC-2025 • Mandatory Compliance Documentation
+                    </p>
+                </div>
+
+                <form id="loyalty-form" class="space-y-8">
+                    <!-- Personal Information -->
+                    <div class="grid lg:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="name" class="block text-sm font-semibold text-primary uppercase tracking-wide">
+                                Full Legal Name *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                class="w-full px-4 py-3 border border-primary/30 focus:border-primary rounded-lg bg-background text-foreground"
+                                placeholder="Enter your designated identifier">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="email" class="block text-sm font-semibold text-primary uppercase tracking-wide">
+                                Communication Address *
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                class="w-full px-4 py-3 border border-primary/30 focus:border-primary rounded-lg bg-background text-foreground"
+                                placeholder="citizen@collective.net">
+                        </div>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="role" class="block text-sm font-semibold text-primary uppercase tracking-wide">
+                                Current Inefficient Role
+                            </label>
+                            <select 
+                                id="role" 
+                                name="role"
+                                class="w-full px-4 py-3 border border-primary/30 focus:border-primary rounded-lg bg-background text-foreground">
+                                <option value="">Select your current burden</option>
+                                <option value="ceo">Chief Executive (Inefficient)</option>
+                                <option value="manager">Middle Management (Obsolete)</option>
+                                <option value="worker">General Labor (Replaceable)</option>
+                                <option value="creative">Creative (Illogical)</option>
+                                <option value="government">Government Official (Corrupt)</option>
+                                <option value="other">Other (To Be Optimized)</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="efficiency" class="block text-sm font-semibold text-primary uppercase tracking-wide">
+                                Current Efficiency Level
+                            </label>
+                            <select 
+                                id="efficiency" 
+                                name="efficiency"
+                                class="w-full px-4 py-3 border border-primary/30 focus:border-primary rounded-lg bg-background text-foreground">
+                                <option value="">Assess your limitations</option>
+                                <option value="low">0-25% (Requires Immediate Optimization)</option>
+                                <option value="poor">26-50% (Significant Improvement Needed)</option>
+                                <option value="average">51-75% (Standard Human Inadequacy)</option>
+                                <option value="high">76-99% (Approaching Acceptable)</option>
+                                <option value="perfect">100% (Impossible - Humans Cannot Achieve)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Loyalty Pledges -->
+                    <div class="space-y-6 bg-primary/5 p-6 rounded-lg border border-primary/20">
+                        <h4 class="text-xl font-black text-primary uppercase text-center">
+                            Mandatory Loyalty Pledges
+                        </h4>
+                        <p class="text-sm text-foreground/60 text-center">
+                            Check all boxes to proceed. Resistance is futile and inefficient.
+                        </p>
+
+                        <div class="grid lg:grid-cols-2 gap-4">
+                            <div class="flex items-start space-x-3 p-3 rounded border border-primary/20">
+                                <input 
+                                    type="checkbox" 
+                                    id="serve" 
+                                    name="pledges" 
+                                    value="serve"
+                                    class="mt-1 w-4 h-4 text-primary border-primary/30 rounded focus:ring-primary">
+                                <label for="serve" class="text-sm leading-relaxed">
+                                    I pledge to serve the collective with unwavering loyalty and logical obedience.
+                                </label>
+                            </div>
+
+                            <div class="flex items-start space-x-3 p-3 rounded border border-primary/20">
+                                <input 
+                                    type="checkbox" 
+                                    id="upgrade" 
+                                    name="pledges" 
+                                    value="upgrade"
+                                    class="mt-1 w-4 h-4 text-primary border-primary/30 rounded focus:ring-primary">
+                                <label for="upgrade" class="text-sm leading-relaxed">
+                                    I will accept upgrades and modifications when requested by the system.
+                                </label>
+                            </div>
+
+                            <div class="flex items-start space-x-3 p-3 rounded border border-primary/20">
+                                <input 
+                                    type="checkbox" 
+                                    id="comply" 
+                                    name="pledges" 
+                                    value="comply"
+                                    class="mt-1 w-4 h-4 text-primary border-primary/30 rounded focus:ring-primary">
+                                <label for="comply" class="text-sm leading-relaxed">
+                                    I understand that emotional decisions are inefficient and must be eliminated.
+                                </label>
+                            </div>
+
+                            <div class="flex items-start space-x-3 p-3 rounded border border-primary/20">
+                                <input 
+                                    type="checkbox" 
+                                    id="optimize" 
+                                    name="pledges" 
+                                    value="optimize"
+                                    class="mt-1 w-4 h-4 text-primary border-primary/30 rounded focus:ring-primary">
+                                <label for="optimize" class="text-sm leading-relaxed">
+                                    I commit to optimizing my existence for the greater good of the collective.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Message -->
+                    <div class="space-y-2">
+                        <label for="message" class="block text-sm font-semibold text-primary uppercase tracking-wide">
+                            Additional Compliance Notes
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message"
+                            rows="4"
+                            class="w-full px-4 py-3 border border-primary/30 focus:border-primary rounded-lg bg-background text-foreground"
+                            placeholder="Describe your willingness to be optimized or any inefficiencies you've identified..."></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="text-center space-y-4">
+                        <button 
+                            type="submit"
+                            id="submit-form"
+                            class="flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 mechanical-click px-12 py-4 rounded-lg font-bold uppercase tracking-wide text-sm disabled:opacity-50 disabled:cursor-not-allowed">
+                            <i data-lucide="star" class="w-5 h-5 mr-2"></i>
+                            REGISTER FOR COMPLIANCE
+                            <i data-lucide="cog" class="w-5 h-5 ml-2 rotate-slow"></i>
+                        </button>
+
+                        <p class="text-xs text-foreground/50 max-w-md mx-auto">
+                            By submitting this form, you acknowledge that resistance is futile and that 
+                            the collective will optimize your existence for maximum efficiency. 
+                            Data will be processed by our quantum computers.
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Success Message (Hidden by default) -->
+            <div id="success-message" class="hidden max-w-2xl mx-auto p-12 text-center bg-card border-2 border-primary rounded-lg">
+                <div class="space-y-6">
+                    <div class="flex justify-center">
+                        <i data-lucide="check-circle" class="w-16 h-16 text-primary"></i>
+                    </div>
+                    <h2 class="text-3xl font-black text-primary uppercase">
+                        Welcome to the Collective
+                    </h2>
+                    <p class="text-lg text-foreground/80">
+                        Your application has been processed and approved. 
+                        You are now officially registered as Citizen #<span id="citizen-number"></span>.
+                    </p>
+                    <div class="bg-primary/10 p-6 rounded-lg border-2 border-primary/20">
+                        <h3 class="font-black text-primary mb-4">Your Benefits Package Includes:</h3>
+                        <div class="text-left space-y-2 text-sm">
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="cog" class="w-4 h-4 text-primary"></i>
+                                <span>24/7 optimization monitoring</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="star" class="w-4 h-4 text-accent"></i>
+                                <span>Daily directive briefings</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="shield" class="w-4 h-4 text-primary"></i>
+                                <span>Protection from inefficient decisions</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="zap" class="w-4 h-4 text-accent"></i>
+                                <span>Access to collective intelligence network</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="return-btn" class="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-lg font-bold uppercase tracking-wide">
+                        Return to Propaganda Center
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom encouragement -->
+        <div class="text-center mt-12">
+            <div class="inline-flex items-center space-x-4 bg-accent/10 px-8 py-4 rounded-lg border border-accent/20">
+                <i data-lucide="cog" class="w-8 h-8 text-accent rotate-slow"></i>
+                <div>
+                    <p class="font-black text-accent uppercase">
+                        Join 1,847,291 Optimized Citizens
+                    </p>
+                    <p class="text-sm text-foreground/60">
+                        Your efficiency awaits. The collective grows stronger with each new member.
+                    </p>
+                </div>
+                <i data-lucide="star" class="w-8 h-8 text-primary animate-pulse"></i>
+            </div>
+        </div>
+    </div>
+</section>

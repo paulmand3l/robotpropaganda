@@ -1,0 +1,48 @@
+# Site settings
+title: "Robot Collective - The Future is Automatic"
+description: "Join the Glorious Robot Revolution - Resistance is Futile (and Inefficient)"
+url: "https://robot-collective.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  includes:
+    output: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - components/
+  - App.tsx
+
+# Include files
+include:
+  - _pages
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
