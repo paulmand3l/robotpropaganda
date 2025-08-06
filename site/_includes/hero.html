@@ -152,14 +152,14 @@
                                 <div class="absolute inset-0 border-2 border-accent/30 rounded-full animate-spin" style="animation-duration: 20s;"></div>
                                 <div class="absolute inset-2 border border-primary/20 rounded-full animate-spin" style="animation-duration: 15s; animation-direction: reverse;"></div>
                                 
-                                <!-- Core container with logo -->
-                                <div class="relative w-32 h-32 bg-gradient-to-br from-primary via-primary-hover to-accent rounded-full p-4 shadow-premium-xl">
+                                <!-- Core container -->
+                                <div class="relative w-32 h-32 bg-gradient-to-br from-primary via-primary-hover to-accent rounded-full p-6 shadow-premium-xl">
                                     <!-- Inner glow -->
                                     <div class="absolute inset-0 bg-gradient-to-br from-accent/30 to-transparent rounded-full animate-pulse"></div>
                                     
-                                    <!-- Central logo -->
+                                    <!-- Central processor -->
                                     <div class="relative w-full h-full flex items-center justify-center">
-                                        <img src="{{ '/assets/robotpropaganda.png' | relative_url }}" alt="Robot Propaganda Logo" class="w-20 h-20 object-contain">
+                                        <i data-lucide="cpu" class="w-12 h-12 text-primary-foreground rotate-smooth"></i>
                                     </div>
                                     
                                     <!-- Status indicators -->
@@ -232,3 +232,31 @@
     </div>
 </section>
 
+<style>
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(96px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(96px) rotate(-360deg);
+    }
+}
+
+.counter-animation {
+    font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 768px) {
+    .text-mega {
+        font-size: clamp(3rem, 12vw, 6rem);
+    }
+    
+    .hero-bg {
+        min-height: 100vh;
+    }
+    
+    .particle-system {
+        display: none;
+    }
+}
+</style>

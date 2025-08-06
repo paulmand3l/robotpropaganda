@@ -589,47 +589,6 @@
   letter-spacing: -0.02em;
 }
 
-/* Orbit animation for hero section */
-@keyframes orbit {
-    from {
-        transform: rotate(0deg) translateX(96px) rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg) translateX(96px) rotate(-360deg);
-    }
-}
-
-.counter-animation {
-    font-variant-numeric: tabular-nums;
-}
-
-/* Header navigation styles */
-.nav-link {
-    color: var(--foreground);
-}
-
-.nav-link:hover {
-    color: var(--primary);
-}
-
-#main-header.scrolled {
-    background: rgba(248, 243, 232, 0.8);
-    backdrop-filter: blur(40px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.mobile-nav-link {
-    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1));
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-
-.mobile-nav-link:hover {
-    background: linear-gradient(135deg, rgba(196, 52, 45, 0.1), rgba(212, 175, 55, 0.1));
-    border-color: rgba(196, 52, 45, 0.3);
-    transform: translateX(8px);
-}
-
 /* Additional Jekyll-specific styles */
 .hidden {
   display: none !important;
