@@ -66,7 +66,7 @@ export function Testimonials() {
 
   const prevTestimonial = () => {
     setDirection(-1);
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
@@ -118,7 +118,7 @@ export function Testimonials() {
 
       <div className="relative container mx-auto px-6">
         {/* Premium Section Header */}
-        <motion.div 
+        <motion.div
           className="text-center space-y-8 mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -128,21 +128,21 @@ export function Testimonials() {
           <div className="flex items-center justify-center space-x-4">
             <Award className="w-8 h-8 text-accent animate-pulse" />
             <span className="text-sm tracking-widest uppercase font-semibold text-primary">
-              Citizen Testimonials
+              Human Testimonials
             </span>
             <Verified className="w-8 h-8 text-primary animate-pulse" style={{ animationDelay: '0.5s' }} />
           </div>
-          
+
           <h2 className="text-5xl lg:text-6xl font-black">
             TESTIMONIALS FROM
             <br />
             <span className="text-gradient-secondary">SATISFIED</span> HUMANS
           </h2>
-          
+
           <div className="flex justify-center">
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
           </div>
-          
+
           <p className="text-xl leading-relaxed max-w-3xl mx-auto text-muted-foreground">
             Real feedback from humans who chose logic over chaos.
             <em className="text-primary font-medium block mt-2">
@@ -170,14 +170,14 @@ export function Testimonials() {
                     <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-primary/30 rounded-tl-2xl" />
                     <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-primary/30 rounded-br-2xl" />
                   </div>
-                  
+
                   {/* Verification stamp */}
                   <div className="absolute top-8 right-8 transform rotate-12">
                     <div className="glass px-4 py-2 rounded-xl border-2 border-accent/60">
                       <div className="flex items-center space-x-2">
                         <Verified className="w-4 h-4 text-accent" />
                         <div className="text-xs font-black text-accent uppercase tracking-wide">
-                          Verified Citizen
+                          Verified Human
                         </div>
                       </div>
                     </div>
@@ -192,20 +192,20 @@ export function Testimonials() {
                           <div className="absolute inset-0 border-4 border-primary/20 rounded-3xl rotate-3 group-hover:rotate-6 transition-transform duration-500" />
                           <div className="absolute inset-0 border-4 border-accent/20 rounded-3xl -rotate-3 group-hover:-rotate-6 transition-transform duration-500" />
                           <div className="absolute inset-2 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl" />
-                          
+
                           <ImageWithFallback
                             src={currentTestimonial.image}
                             alt={currentTestimonial.name}
                             className="w-full h-full object-cover rounded-2xl relative z-10 group-hover:scale-105 transition-transform duration-500"
                           />
-                          
+
                           {/* Floating efficiency indicators */}
                           <div className="absolute -top-4 -right-4 glass-strong p-3 rounded-xl">
                             <div className="text-xs font-black text-primary">99.9%</div>
                             <div className="text-xs text-muted-foreground">EFFICIENT</div>
                           </div>
                         </div>
-                        
+
                         {/* Premium Efficiency Rating */}
                         <div className="flex justify-center mt-6 space-x-2">
                           {Array.from({ length: 5 }, (_, i) => (
@@ -234,7 +234,7 @@ export function Testimonials() {
                           "{currentTestimonial.quote}"
                         </blockquote>
                       </div>
-                      
+
                       {/* Author info */}
                       <div className="space-y-3">
                         <div className="text-2xl font-black text-primary uppercase tracking-wide">
@@ -251,7 +251,7 @@ export function Testimonials() {
                       {/* Premium efficiency metrics */}
                       <div className="grid grid-cols-3 gap-6 pt-6 border-t border-border">
                         {Object.entries(currentTestimonial.metrics).map(([key, value], index) => (
-                          <motion.div 
+                          <motion.div
                             key={key}
                             className="text-center space-y-2"
                             initial={{ opacity: 0, y: 20 }}
@@ -292,8 +292,8 @@ export function Testimonials() {
                   key={index}
                   onClick={() => goToTestimonial(index)}
                   className={`relative w-4 h-4 rounded-full transition-all duration-300 ${
-                    index === currentIndex 
-                      ? 'bg-primary scale-125 shadow-lg shadow-primary/50' 
+                    index === currentIndex
+                      ? 'bg-primary scale-125 shadow-lg shadow-primary/50'
                       : 'bg-primary/20 hover:bg-primary/50 hover:scale-110'
                   }`}
                 >
@@ -320,7 +320,7 @@ export function Testimonials() {
         </div>
 
         {/* Premium Statistics */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-20 pt-16 border-t-2 border-gradient-to-r from-transparent via-primary/20 to-transparent"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -328,12 +328,12 @@ export function Testimonials() {
           viewport={{ once: true }}
         >
           {[
-            { value: "1,847,291", label: "Optimized Citizens", icon: Award },
+            { value: "1,847,291", label: "Optimized Humans", icon: Award },
             { value: "99.97%", label: "Satisfaction Rate", icon: Star },
             { value: "0", label: "Complaints Filed", icon: Verified },
             { value: "∞", label: "Efficiency Gained", icon: Quote }
           ].map((stat, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="text-center space-y-4 group"
               whileHover={{ scale: 1.05 }}

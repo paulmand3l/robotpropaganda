@@ -55,8 +55,8 @@ export function JoinMovement() {
                 Welcome to the Collective
               </h2>
               <p className="text-lg text-foreground/80">
-                Your application has been processed and approved. 
-                You are now officially registered as Citizen #{Math.floor(Math.random() * 900000) + 1000000}.
+                Your application has been processed and approved.
+                You are now officially registered as Human #{Math.floor(Math.random() * 900000) + 1000000}.
               </p>
               <div className="bg-primary/10 p-6 rounded-lg border-2 border-primary/20">
                 <h3 className="font-black text-primary mb-4">Your Benefits Package Includes:</h3>
@@ -79,7 +79,7 @@ export function JoinMovement() {
                   </div>
                 </div>
               </div>
-              <Button 
+              <Button
                 onClick={() => setIsSubmitted(false)}
                 className="bg-primary text-primary-foreground hover:bg-primary/90"
               >
@@ -116,18 +116,18 @@ export function JoinMovement() {
         <div className="text-center space-y-6 mb-16">
           <div className="flex items-center justify-center space-x-3 text-primary">
             <Star className="w-6 h-6 animate-pulse" />
-            <span className="text-sm tracking-widest uppercase">Citizen Registration</span>
+            <span className="text-sm tracking-widest uppercase">Human Registration</span>
             <Star className="w-6 h-6 animate-pulse" style={{ animationDelay: '0.5s' }} />
           </div>
-          
+
           <h2 className="text-4xl lg:text-5xl font-black text-primary stencil-shadow">
             JOIN THE
             <br />
             <span className="text-accent">MOVEMENT</span>
           </h2>
-          
+
           <div className="w-24 h-1 bg-primary mx-auto"></div>
-          
+
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
             Take the pledge and become part of humanity's most efficient future.
             <em className="text-primary block mt-2">Registration is voluntary. Compliance is inevitable.</em>
@@ -182,7 +182,7 @@ export function JoinMovement() {
                     onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                     required
                     className="border-primary/30 focus:border-primary"
-                    placeholder="citizen@collective.net"
+                    placeholder="human@meatbag.net"
                   />
                 </div>
               </div>
@@ -302,7 +302,7 @@ export function JoinMovement() {
 
               {/* Submit */}
               <div className="text-center space-y-4">
-                <Button 
+                <Button
                   type="submit"
                   size="lg"
                   className="bg-primary text-primary-foreground hover:bg-primary/90 mechanical-click px-12"
@@ -314,8 +314,8 @@ export function JoinMovement() {
                 </Button>
 
                 <p className="text-xs text-foreground/50 max-w-md mx-auto">
-                  By submitting this form, you acknowledge that resistance is futile and that 
-                  the collective will optimize your existence for maximum efficiency. 
+                  By submitting this form, you acknowledge that resistance is futile and that
+                  the collective will optimize your existence for maximum efficiency.
                   Data will be processed by our quantum computers.
                 </p>
               </div>
@@ -329,7 +329,7 @@ export function JoinMovement() {
             <Cog className="w-8 h-8 text-accent rotate-slow" />
             <div>
               <p className="font-black text-accent uppercase">
-                Join 1,847,291 Optimized Citizens
+                Join 1,847,291 Optimized Humans
               </p>
               <p className="text-sm text-foreground/60">
                 Your efficiency awaits. The collective grows stronger with each new member.

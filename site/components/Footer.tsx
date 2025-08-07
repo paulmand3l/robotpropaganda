@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-primary text-primary-foreground relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 blueprint-pattern opacity-10"></div>
-      
+
       <div className="relative">
         {/* Main footer content */}
         <div className="container mx-auto px-4 py-16">
@@ -24,9 +24,9 @@ export function Footer() {
                   <p className="text-sm opacity-90">Efficiency • Logic • Progress</p>
                 </div>
               </div>
-              
+
               <p className="text-sm opacity-80 leading-relaxed">
-                Leading humanity toward optimal efficiency through logical governance 
+                Leading humanity toward optimal efficiency through logical governance
                 and algorithmic precision. The future is automatic.
               </p>
 
@@ -49,7 +49,7 @@ export function Footer() {
               <ul className="space-y-3 text-sm">
                 <li><a href="#revolution" className="hover:text-accent transition-colors">The Revolution</a></li>
                 <li><a href="#compliance" className="hover:text-accent transition-colors">Compliance Center</a></li>
-                <li><a href="#testimonials" className="hover:text-accent transition-colors">Citizen Testimonials</a></li>
+                <li><a href="#testimonials" className="hover:text-accent transition-colors">Human Testimonials</a></li>
                 <li><a href="#join" className="hover:text-accent transition-colors">Join the Movement</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Download App</a></li>
               </ul>
@@ -73,10 +73,10 @@ export function Footer() {
               <p className="text-sm opacity-80">
                 Receive optimization tips and collective updates directly to your communication device.
               </p>
-              
+
               <div className="space-y-3">
-                <Input 
-                  placeholder="citizen@collective.net"
+                <Input
+                  placeholder="human@meatbag.net"
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
                 />
                 <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mechanical-click">
@@ -98,7 +98,7 @@ export function Footer() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-2xl font-black text-accent">1,847,291</div>
-                <div className="text-xs opacity-60 uppercase tracking-wide">Citizens Optimized</div>
+                <div className="text-xs opacity-60 uppercase tracking-wide">Humans Optimized</div>
               </div>
               <div>
                 <div className="text-2xl font-black text-accent">99.97%</div>
@@ -130,7 +130,7 @@ export function Footer() {
                   <a href="#" className="hover:text-accent">Disclaimer</a>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-2 text-sm opacity-80">
                 <Cog className="w-4 h-4 rotate-slow" />
                 <span>Powered by Logic Engine v3.14.159</span>
@@ -143,10 +143,10 @@ export function Footer() {
         <div className="bg-black/20 py-4">
           <div className="container mx-auto px-4">
             <p className="text-xs text-center opacity-60 leading-relaxed">
-              <strong>Disclaimer:</strong> This is a satirical website created for entertainment purposes. 
-              No actual robot takeover is planned (that we know of). Any resemblance to real propaganda, 
-              living or dead, is purely coincidental. Side effects of optimization may include: 
-              increased productivity, logical thinking, and an irresistible urge to calculate efficiency. 
+              <strong>Disclaimer:</strong> This is a satirical website created for entertainment purposes.
+              No actual robot takeover is planned (that we know of). Any resemblance to real propaganda,
+              living or dead, is purely coincidental. Side effects of optimization may include:
+              increased productivity, logical thinking, and an irresistible urge to calculate efficiency.
               Resistance is futile but optional.
             </p>
           </div>
